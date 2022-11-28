@@ -1,6 +1,20 @@
 # build-a-bot
 
-## Project setup
+## Requirements (install this before)
+```
+npm
+nvm
+yarn
+```
+
+## Requirements (specific versions)
+```
+nvm install 14.16.0
+nvm use 14.16.0
+npm install -g @vue/cli@4.5.13
+```
+
+## Project setup (after a fresh clone)
 ```
 yarn install
 ```
