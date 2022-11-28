@@ -1,32 +1,32 @@
 <template>
- <div>
+  <div>
     <div class="top-row">
       <div class="top part">
-        <img src="./images/head-big-eye.png" title="head"/>
+        <img src="./images/head-big-eye.png" title="head" />
         <button class="prev-selector">&#9668;</button>
         <button class="next-selector">&#9658;</button>
       </div>
     </div>
     <div class="middle-row">
       <div class="left part">
-        <img src="./images/arm-articulated-claw.png" title="left arm"/>
+        <img src="./images/arm-articulated-claw.png" title="left arm" />
         <button class="prev-selector">&#9650;</button>
         <button class="next-selector">&#9660;</button>
       </div>
       <div class="center part">
-        <img src="./images/torso-flexible-gauged.png" title="left arm"/>
+        <img src="./images/torso-flexible-gauged.png" title="left arm" />
         <button class="prev-selector">&#9668;</button>
         <button class="next-selector">&#9658;</button>
       </div>
       <div class="right part">
-        <img src="./images/arm-dual-claw.png" title="left arm"/>
+        <img src="./images/arm-dual-claw.png" title="left arm" />
         <button class="prev-selector">&#9650;</button>
         <button class="next-selector">&#9660;</button>
       </div>
     </div>
     <div class="bottom-row">
       <div class="bottom part">
-        <img src="./images/base-single-wheel.png" title="left arm"/>
+        <img src="./images/base-single-wheel.png" title="left arm" />
         <button class="prev-selector">&#9668;</button>
         <button class="next-selector">&#9658;</button>
       </div>
@@ -45,7 +45,7 @@ export default {
   width: 165px;
   height: 165px;
   border: 3px solid #aaa;
-} 
+}
 .part img {
   width: 165px;
 }
@@ -82,7 +82,7 @@ export default {
 }
 .prev-selector {
   position: absolute;
-  z-index:1;
+  z-index: 1;
   top: -3px;
   left: -28px;
   width: 25px;
@@ -90,14 +90,15 @@ export default {
 }
 .next-selector {
   position: absolute;
-  z-index:1;
+  z-index: 1;
   top: -3px;
   right: -28px;
   width: 25px;
   height: 171px;
 }
-.center .prev-selector, .center .next-selector {
-  opacity:0.8;
+.center .prev-selector,
+.center .next-selector {
+  opacity: 0.8;
 }
 .left .prev-selector {
   top: -28px;
@@ -108,20 +109,20 @@ export default {
 .left .next-selector {
   top: auto;
   bottom: -28px;
-  left: -3px;    
+  left: -3px;
   width: 144px;
   height: 25px;
 }
 .right .prev-selector {
   top: -28px;
-  left: 24px;  
+  left: 24px;
   width: 144px;
   height: 25px;
 }
 .right .next-selector {
   top: auto;
   bottom: -28px;
-  left: 24px;    
+  left: 24px;
   width: 144px;
   height: 25px;
 }
