@@ -77,11 +77,11 @@ export default {
   computed: {
     selectedRobot() {
       return {
-        head: availableParts.heads[this.selectedHeadIndex],
-        leftArm: availableParts.arms[this.selectedLeftArmIndex],
-        torso: availableParts.torsos[this.selectedTorsoIndex],
-        rightArm: availableParts.arms[this.selectedRightArmIndex],
-        base: availableParts.bases[this.selectedBaseIndex],
+        head: availableParts.heads[this.selectNextHeadIndex],
+        leftArm: availableParts.arms[this.selectNextLeftArmIndex],
+        torso: availableParts.torsos[this.selectNextTorsoIndex],
+        rightArm: availableParts.arms[this.selectNextRightArmIndex],
+        base: availableParts.bases[this.selectNextBaseIndex],
       };
     },
   },
