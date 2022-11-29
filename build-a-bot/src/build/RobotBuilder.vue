@@ -3,51 +3,49 @@
     <div class="top-row">
       <div class="top part">
         <img
-          v-bind:src="availableParts.heads[selectNextHeadIndex].src"
+          :src="availableParts.heads[selectNextHeadIndex].src"
           title="head"
         />
-        <button v-on:click="selectPreviousHead()" class="prev-selector">
+        <button @click="selectPreviousHead()" class="prev-selector">
           &#9668;
         </button>
-        <button v-on:click="selectNextHead()" class="next-selector">
-          &#9658;
-        </button>
+        <button @click="selectNextHead()" class="next-selector">&#9658;</button>
       </div>
     </div>
     <div class="middle-row">
       <div class="left part">
         <img
-          v-bind:src="availableParts.arms[selectNextLeftArmIndex].src"
+          :src="availableParts.arms[selectNextLeftArmIndex].src"
           title="left arm"
         />
-        <button v-on:click="selectPreviousLeftArm()" class="prev-selector">
+        <button @click="selectPreviousLeftArm()" class="prev-selector">
           &#9650;
         </button>
-        <button v-on:click="selectNextLeftArm()" class="next-selector">
+        <button @click="selectNextLeftArm()" class="next-selector">
           &#9660;
         </button>
       </div>
       <div class="center part">
         <img
-          v-bind:src="availableParts.torsos[selectNextTorsoIndex].src"
+          :src="availableParts.torsos[selectNextTorsoIndex].src"
           title="left arm"
         />
-        <button v-on:click="selectPreviousTorso()" class="prev-selector">
+        <button @click="selectPreviousTorso()" class="prev-selector">
           &#9668;
         </button>
-        <button v-on:click="selectNextTorso()" class="next-selector">
+        <button @click="selectNextTorso()" class="next-selector">
           &#9658;
         </button>
       </div>
       <div class="right part">
         <img
-          v-bind:src="availableParts.arms[selectNextRightArmIndex].src"
+          :src="availableParts.arms[selectNextRightArmIndex].src"
           title="left arm"
         />
-        <button v-on:click="selectPreviousRightArm()" class="prev-selector">
+        <button @click="selectPreviousRightArm()" class="prev-selector">
           &#9650;
         </button>
-        <button v-on:click="selectNextRightArm()" class="next-selector">
+        <button @click="selectNextRightArm()" class="next-selector">
           &#9660;
         </button>
       </div>
@@ -55,15 +53,13 @@
     <div class="bottom-row">
       <div class="bottom part">
         <img
-          v-bind:src="availableParts.bases[selectNextBaseIndex].src"
+          :src="availableParts.bases[selectNextBaseIndex].src"
           title="left arm"
         />
-        <button v-on:click="selectPreviousBase()" class="prev-selector">
+        <button @click="selectPreviousBase()" class="prev-selector">
           &#9668;
         </button>
-        <button v-on:click="selectNextBase()" class="next-selector">
-          &#9658;
-        </button>
+        <button @click="selectNextBase()" class="next-selector">&#9658;</button>
       </div>
     </div>
   </div>
