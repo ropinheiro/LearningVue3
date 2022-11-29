@@ -11,16 +11,21 @@
   </header>
   <main>
     <RobotBuilder />
+    <!-- Uncomment this to have the Search working -->
+    <!-- <Search /> -->
   </main>
 </template>
 
 <script>
 import RobotBuilder from "./build/RobotBuilder.vue";
-
+// Uncomment this to have the Search working
+// import Search from "./search/Search.vue";
 export default {
   name: "App",
   components: {
     RobotBuilder,
+    // Uncomment this to have the Search working
+    // Search,
   },
 };
 </script>
