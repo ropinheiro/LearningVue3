@@ -8,12 +8,20 @@
 import parts from "../data/parts";
 export default {
   name: "PartInfo",
+  props: {
+    partType: { type: String },
+    id: {
+      type: [Number, String],
+      validator(value) {
+        return Number.isInteger(Number(value));
+      },
+    },
+  },
   computed: {
     part() {
-      const { partType, id } = this.$route.params;
       // Note for beginners:
       // The "+" at the left of "id" converts the original string to an integer
-      return parts[partType].find((part) => part.id === +id);
+      return parts[this.partType].find((part) => part.id === +this.id);
     },
   },
 };
