@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 import HomePage from "../home/HomePage.vue";
 import RobotBuilder from "../build/RobotBuilder.vue";
@@ -13,7 +13,7 @@ import SidebarStandard from "../sidebars/SidebarStandard.vue";
 import SidebarBuild from "../sidebars/SidebarBuild.vue";
 
 export default createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes: [
     {
       path: "/",
@@ -53,6 +53,10 @@ export default createRouter({
       name: "Parts",
       component: PartInfo,
       props: true,
+      beforeEnter(to, _from, next) {
+        const isValidId = Number.isInteger(Number(to.params.id));
+        next(isValidId);
+      },
     },
     {
       path: "/search",
