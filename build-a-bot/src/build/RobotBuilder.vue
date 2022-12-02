@@ -49,23 +49,6 @@
         @partSelected="(part) => (selectedRobot.base = part)"
       />
     </div>
-    <div class="cart">
-      <h1>Cart</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Robot</th>
-            <th class="cost">Cost</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(robot, index) in cart" :key="index">
-            <td>{{ robot.head.title }}</td>
-            <td class="cost">{{ robot.cost }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
 </template>
 <script>
@@ -250,23 +233,9 @@ export default {
 
 .add-to-cart {
   position: absolute;
-  width: 210px;
+  width: 90px;
   padding: 3px;
-  font-size: 16px;
-}
-
-td,
-th {
-  text-align: left;
-  padding: 5px;
-  padding-right: 20px;
-}
-
-.cart {
-  margin-left: 250px;
-}
-.cost {
-  text-align: right;
+  font-size: 14px;
 }
 
 .sale-border {
@@ -275,19 +244,19 @@ th {
 
 .preview {
   position: absolute;
-  top: 440px;
+  top: -20px;
   right: 0;
-  left: 0;
-  width: 210px;
-  height: 210px;
+  left: -20px;
+  width: 90px;
+  height: 90px;
   padding: 5px;
 }
 .preview-content {
   border: 1px solid #999;
 }
 .preview img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 .rotate-right {
   transform: rotate(90deg);
