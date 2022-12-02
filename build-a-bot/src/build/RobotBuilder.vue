@@ -49,7 +49,7 @@
         @partSelected="(part) => (selectedRobot.base = part)"
       />
     </div>
-    <div>
+    <div class="cart">
       <h1>Cart</h1>
       <table>
         <thead>
@@ -251,6 +251,9 @@ th {
   padding-right: 20px;
 }
 
+.cart {
+  margin-left: 250px;
+}
 .cost {
   text-align: right;
 }
@@ -261,8 +264,9 @@ th {
 
 .preview {
   position: absolute;
-  top: -20px;
+  top: 440px;
   right: 0;
+  left: 0;
   width: 210px;
   height: 210px;
   padding: 5px;
