@@ -73,7 +73,6 @@ import availableParts from "../data/parts";
 import createdHookMixin from "./created-hook-mixin";
 import PartSelector from "./PartSelector.vue";
 import CollapsibleSection from "../shared/CollapsibleSection.vue";
-
 export default {
   name: "RobotBuilder",
   beforeRouteLeave(to, _from, next) {
@@ -116,7 +115,7 @@ export default {
         robot.torso.cost +
         robot.rightArm.cost +
         robot.base.cost;
-      this.cart.push(Object.assign({}, robot, { cost }));
+      this.$store.commit("addRobotToCart", { ...robot, cost });
       this.addedToCart = true;
     },
   },
