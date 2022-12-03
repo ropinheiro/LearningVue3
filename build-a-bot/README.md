@@ -10,7 +10,7 @@ Part of it was copied from the helper repo [here](https://github.com/jmcooper/vu
 
 Important note: contrary to original author, I use `yarn` instead of `npm`.
 
-I was able to run the code in the following operative systems and IDE's.
+I was able to run the code in the following operative systems and IDE's:
 
 ```
 OS: Mac or WSL
@@ -29,6 +29,11 @@ yarn
 nvm install 14.16.0
 nvm use 14.16.0
 npm install -g @vue/cli@4.5.13
+```
+
+## Requirements (other apps)
+```
+build-a-bot-server (see the sibling folder with the same name)
 ```
 
 ## Project setup (after a fresh clone)
