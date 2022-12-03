@@ -3,6 +3,8 @@ import axios from "axios";
 
 export default createStore({
   state: {
+    // Beginners note: we need to always define default values
+    // for all properties in the store. There are good reasons
     cart: [],
     parts: null,
   },

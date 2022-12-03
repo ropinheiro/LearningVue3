@@ -1,4 +1,5 @@
 import { ref, onMounted } from "vue";
+// TODO: use a call to the API instead of this file.
 import parts from "../data/parts";
 
 const allParts = [

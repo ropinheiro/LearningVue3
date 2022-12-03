@@ -1,3 +1,7 @@
+// TODO: this file is still used in useSearch.js
+//       remove this file as soon as we change useSearch.js
+//       to use the API instead (e.g. like RobotArms.vue)
+
 const images = require.context("../build/images/", true, /\.png$/);
 
 const parts = {
