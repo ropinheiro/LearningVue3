@@ -29,7 +29,7 @@ export default createStore({
     },
     addRobotToCart({ commit, state }, robot) {
       const cart = [...state.cart, robot];
-      axios
+      return axios
         .post("/api/cart", cart)
         .then(() => commit("addRobotToCart", robot))
         .catch(console.error);
