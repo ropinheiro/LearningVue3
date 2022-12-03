@@ -8,7 +8,7 @@ Almost everything in this repository was copied from the helper repo [here](http
 
 Important note: contrary to original author, I use `yarn` instead of `npm`.
 
-I was able to run the server in the following operative systems and IDE's.
+I was able to run the server in the following operative systems and IDE's:
 
 ```
 OS: Mac or WSL
