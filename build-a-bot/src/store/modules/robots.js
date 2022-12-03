@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export default {
+  namespaced: true,
   state: {
     // Beginners note: we need to always define default values
     // for all properties in the store. There are good reasons

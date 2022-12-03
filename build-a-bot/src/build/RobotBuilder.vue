@@ -58,7 +58,7 @@ import CollapsibleSection from "../shared/CollapsibleSection.vue";
 export default {
   name: "RobotBuilder",
   created() {
-    this.$store.dispatch("getParts");
+    this.$store.dispatch("robots/getParts");
   },
   beforeRouteLeave(to, _from, next) {
     if (this.addedToCart === true) {
@@ -103,7 +103,7 @@ export default {
         robot.rightArm.cost +
         robot.base.cost;
       this.$store
-        .dispatch("addRobotToCart", { ...robot, cost })
+        .dispatch("robots/addRobotToCart", { ...robot, cost })
         .then(() => this.$router.push("/cart"));
       this.addedToCart = true;
     },

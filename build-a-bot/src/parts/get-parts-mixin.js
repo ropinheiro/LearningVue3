@@ -5,7 +5,7 @@ export default {
     // The action will fill a "parts" property in the store's state.
     // We should be aware that the "parts" property can be accessed
     // before it is filled, therefore the Beginner note below.
-    this.$store.dispatch("getParts");
+    this.$store.dispatch("robots/getParts");
   },
   computed: {
     parts() {
