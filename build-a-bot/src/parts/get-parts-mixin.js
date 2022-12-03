@@ -10,7 +10,7 @@ export default {
   computed: {
     parts() {
       return (
-        this.$store.state.parts || {
+        this.$store.state.robots.parts || {
           // Beginner note: return an empty (but valid) object
           // while the store is not filled with the parts.
           heads: [],
