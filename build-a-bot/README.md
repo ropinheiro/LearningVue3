@@ -8,6 +8,8 @@ All the code came from the course (even if I do my changes here and there).
 
 Part of it was copied from the helper repo [here](https://github.com/jmcooper/vuejs-fundamentals).
 
+Important note: contrary to original author, I use `yarn` instead of `npm`.
+
 I was able to run the code in the following operative systems and IDE's.
 
 ```
