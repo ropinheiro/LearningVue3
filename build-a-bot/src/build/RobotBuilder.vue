@@ -106,9 +106,15 @@ export default {
         robot.torso.cost +
         robot.rightArm.cost +
         robot.base.cost;
-      this.addRobotToCart(...robot, cost).then(() =>
-        this.$router.push("/cart")
-      );
+      // TODO: we need to understand why this hack is needed. If we pass
+      //       {...this.selectedRobot, cost} directly to addRobotToCart()
+      //       we get errors. In the console log, when outputing the object
+      //       contents, "proxy" appears, but if we do JSON.parse+stringify
+      //       then "proxy" do not appears (with the object's contents).
+      //       Looks like data structure issues. Doing JSON.parse+stringify
+      //       seems to remove the problematic parts.
+      const robotInfo = { ...JSON.parse(JSON.stringify(robot)), cost };
+      this.addRobotToCart(robotInfo).then(() => this.$router.push("/cart"));
       this.addedToCart = true;
     },
   },
